@@ -53,7 +53,7 @@ const personalMovieDB = {
     };
 
     this.genres.forEach((genre, index) => {
-      console.log(`Любимый жанр #${index + 1} - это ${genre}`);
+      console.log(`Любимый жанр ${index + 1} - это ${genre}`);
     })
   },
   showMyDB() {
@@ -62,17 +62,3 @@ const personalMovieDB = {
     }
   }
 };
-
-personalMovieDB.start();
-
-// Добавление ответов от пользователя в объект movies
-personalMovieDB.addUserResponses();
-
-// Проверка свойства count на количество просмотренных фильмов
-personalMovieDB.checkNumberMovies();
-
-// Запись номера любимого жанра
-personalMovieDB.writeYourGenres();
-
-// Показать базу данных в консоли
-personalMovieDB.showMyDB();
